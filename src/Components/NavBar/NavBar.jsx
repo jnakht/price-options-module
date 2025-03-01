@@ -23,7 +23,7 @@ const NavBar = () => {
                 }
                 
             </div>
-           <ul className="md:flex gap-10">
+           <ul className={`md:flex gap-10 absolute md:static bg-slate-500 ${openClose === true ? '-left-80' : 'left-6' } duration-1000 p-3 rounded-xl md:rounded-none`}>
            {
                 routes.map(route => <Link key={route.id} route={route}></Link>)
             }
