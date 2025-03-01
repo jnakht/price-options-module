@@ -5,6 +5,7 @@ import DaisyNav from './Components/DaisyNav/DaisyNav'
 import LineChart from './Components/LineChart/LineChart'
 import MultiLineChart from './Components/MultiLineChart/MultiLineChart'
 import NavBar from './Components/NavBar/NavBar'
+import PieC from './Components/PieC/PieC'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
       <LineChart></LineChart>
       <MultiLineChart></MultiLineChart>
       <BarChart></BarChart>
+      <PieC></PieC>
     </>
   )
 }
