@@ -9,7 +9,9 @@ import NavBar from './Components/NavBar/NavBar'
 import PieC from './Components/PieC/PieC'
 import axios from 'axios'
 import PhonesBarChart from './Components/PhonesBarChart/PhonesBarChart'
-
+import ReactDatePicker from './Components/ReactDatePicker/ReactDatePicker'
+import { Audio } from 'react-loader-spinner'
+;
 
 function App() {
   
@@ -46,6 +48,18 @@ function App() {
       <BarChart></BarChart>
       <PieC></PieC> 
       <PhonesBarChart phones={phones}></PhonesBarChart>
+      <div className='m-10'>
+         <ReactDatePicker></ReactDatePicker>
+      </div>
+      <Audio
+  height="80"
+  width="80"
+  radius="9"
+  color="green"
+  ariaLabel="loading"
+  wrapperStyle
+  wrapperClass
+/>
     </>
   )
 }
