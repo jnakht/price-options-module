@@ -19,8 +19,19 @@ function App() {
 
     // fetch data using axios
     axios.get('https://openapi.programming-hero.com/api/phones?search=iphone')
-    .then(data => console.log(data.data.data))
-
+    .then(data => {
+      console.log(data.data.data)
+      const allPhones = data.data.data;
+      const fakeData = allPhones.map(phone => {
+          const obj = {
+            name: phone.phone_name,
+            price: phone.slug.split('-')[1],
+          }
+          return obj;
+      })
+      setPhones(fakeData)
+      console.log(fakeData)
+    })
   } ,[])
   
 
