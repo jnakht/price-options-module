@@ -8,6 +8,8 @@ import MultiLineChart from './Components/MultiLineChart/MultiLineChart'
 import NavBar from './Components/NavBar/NavBar'
 import PieC from './Components/PieC/PieC'
 import axios from 'axios'
+import PhonesBarChart from './Components/PhonesBarChart/PhonesBarChart'
+
 
 function App() {
   
@@ -43,6 +45,7 @@ function App() {
       <MultiLineChart></MultiLineChart>
       <BarChart></BarChart>
       <PieC></PieC> 
+      <PhonesBarChart phones={phones}></PhonesBarChart>
     </>
   )
 }
