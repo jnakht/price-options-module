@@ -12,6 +12,7 @@ import PhonesBarChart from './Components/PhonesBarChart/PhonesBarChart'
 import ReactDatePicker from './Components/ReactDatePicker/ReactDatePicker'
 import { Audio } from 'react-loader-spinner'
 ;
+import NavbarRecap from './Components/NavbarRecap/NavbarRecap'
 
 function App() {
   
@@ -43,6 +44,7 @@ function App() {
     <>
       {/* <DaisyNav></DaisyNav> */}
       <NavBar></NavBar>
+      <NavbarRecap></NavbarRecap>
       <LineChart></LineChart>
       <MultiLineChart></MultiLineChart>
       <BarChart></BarChart>
